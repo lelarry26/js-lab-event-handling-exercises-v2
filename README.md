@@ -8,17 +8,11 @@ This repo is divided into folders. Following the instructions on the learning po
 
 Create a button that displays and alert with the text "Button Pressed" when clicked.
 
-### Show Mouse Position
-
-Create a button that displays an alert with the X and Y coordinates of the mouse when clicked.
-
-- Hint: You will need to access the `event` object and access the `screenX` and `screenY` properties
-
 ### Add a scroll event
 
-Add an event to log "You scrolled the page" to the console when a user scrolls the page. The following code is how you would add a 'resize' event. You can use this as a prompt to start the 'scroll' event.
+Add an event to log "You scrolled the page" to the console when a user scrolls the page.
 
-> **Bonus**: See how many times the console message displays? You may also want to research a 'debounce' function. Running an event handler every time the page scrolls can be a memory intensive procedure and a 'debounce' function will help with that.
+The following code is how you would add a *'resize'* event. This is close to what you need, but not exactly. You can use this as a prompt to start the 'scroll' event.
 
 ``` js
 <script>
@@ -27,6 +21,24 @@ Add an event to log "You scrolled the page" to the console when a user scrolls t
     })
 </script>
 ```
+
+### Show Mouse Position
+
+Create a button that displays an alert with the X and Y coordinates of the mouse when clicked.
+
+- Hint: You will need to access the `event` object and access the `screenX` and `screenY` properties
+
+### Counter
+
+Show the number 0 on the page in a heading element. Create a button that when clicked, increases the number on screen by 1.
+
+As a bonus, add a button that decreases the number by 1.
+
+### Bubble Wrap
+
+Create a grid of circle emojis on the page so it looks sort of like a sheet of bubble wrap. Add event listeners to each "bubble" so that they change to an X emoji when clicked.
+
+You can copy/paste the emojis here: ⭕️ ❌
 
 ## Medium
 
