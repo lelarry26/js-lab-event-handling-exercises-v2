@@ -1,6 +1,6 @@
 # Handling Browser Events - Exercise Starter Code
 
-This repo is divided into folders. Following the instructions on the learning portal, complete each exercise in their given folders.
+This repo is divided into folders. Following the instructions in this readme, complete each exercise in their given folders.
 
 ## Small
 
@@ -76,6 +76,7 @@ A Mad Libs is a word game where one player prompts others for a list of words to
 ### Calculator
 
 Using the following parameters and starter code to create a calculator.
+> You SHOULD NOT have to change anything in the HTML to make this work.  Your goal should be to do it ALL with JavaScript.
 
 - Add click handlers to the number buttons
   - Create an array of the numbers clicked, in order
