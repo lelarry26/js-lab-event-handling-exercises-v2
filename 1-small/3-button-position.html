@@ -6,11 +6,16 @@
   <title>Button Position</title>
 </head>
 <body>
-  <!-- HTML goes here -->
+  <div>
+    <button id = "Button">Click Here!</button>
+  </div>
 
   <script>
-    // JavaScript goes here
-
+    Button.addEventListener("click", function() {
+      let mousex = event.screenX;
+      let mousey = event.screenY;
+      window.alert(`Button Pressed at ${mousex}, ${mousey}`);
+})
   </script>
 </body>
 </html>

@@ -7,10 +7,20 @@
 </head>
 <body>
   <!-- HTML goes here -->
-
+  <header id = "numberCount">0</header>
+  <div>
+    <button id = "ButtonPlus">++++++</button>
+    <button id = "ButtonMinus">- - - - - -</button>
+  </div>
   <script>
     // JavaScript goes here
-
+    ButtonPlus.addEventListener("click", function() {
+      numberCount.innerText = Number(numberCount.innerText) + 1;
+    })
+    ButtonMinus.addEventListener("click", function() {
+      numberCount.innerText = Number(numberCount.innerText) - 1;
+    })
+console.log(numberCount)
   </script>
 </body>
 </html>
