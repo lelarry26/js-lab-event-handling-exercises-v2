@@ -3,19 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MadLib</title>
+  <title>Lib</title>
 </head>
 <body>
   <!-- HTML goes here -->
-  <h1>MadLib</h1>
+  <h1>Lib</h1>
 
   <form id="madLibForm" style="display: block;">
     <p class="form-group">
-      <label for="animal">Animal</label>
+      <label for="madanimal">Animal</label>
       <br>
-      <input type="text" name="animal" id="animal">
+      <input type="text" name="madanimal" id="madanimal">
+      <br>
+      <label for="madcountry">country</label>
+      <br>
+      <input type="text" name="madcountry" id="madcountry">
+      <br>
+      <label for="madpluralNoun">pluralNoun</label>
+      <br>
+      <input type="text" name="madpluralNoun" id="madpluralNoun">
+      <br>
+      <label for="madfood">food</label>
+      <br>
+      <input type="text" name="madfood" id="madfood">
+      <br>
+      <label for="maddevice">device</label>
+      <br>
+      <input type="text" name="maddevice" id="maddevice">
+      <br>
+      <label for="madnoun">noun</label>
+      <br>
+      <input type="text" name="madnoun" id="madnoun">
+      <br>
+      <label for="madadjective">adjective</label>
+      <br>
+      <input type="text" name="madadjective" id="madadjective">
+      <br>
+      <label for="madadjective2">adjective2</label>
+      <br>
+      <input type="text" name="madadjective2" id="madadjective2">
+      <br>
     </p>
-    <button type="submit">Do the MadLib!</button>
+    <button id= "submit" type="submit">Do the MadLib!</button>
   </form>
   
   <div id="madLibStory" style="display: none">
@@ -28,7 +57,7 @@
       <span class="device"></span> hidden behind a <span class="noun"></span>.
       Suddenly, the device turned on and started to become <span class="adjective"></span>.
       The king of <span class="country"></span> suddenly appeared, jumped on top
-      of the <span class="adjective"></span> <span class="device"></span> and floated
+      of the <span class="adjective2"></span> <span class="device"></span> and floated
       off into the sunset.
     </p>
     <p>
@@ -39,7 +68,36 @@
   </div>
 
   <script>
-    // JavaScript goes here
+    let animal = document.getElementsByClassName("animal");
+    let country = document.getElementsByClassName("country");
+    let pluralNoun = document.getElementsByClassName("pluralNoun");
+    let food = document.getElementsByClassName("food");
+    let device = document.getElementsByClassName("device");
+    let noun = document.getElementsByClassName("noun");
+    let adjective = document.getElementsByClassName("adjective");
+    let adjective2 = document.getElementsByClassName("adjective2");
+    submit.addEventListener("click", () => {
+      event.preventDefault();
+      document.getElementById("madLibStory").style.display = "block";
+      document.getElementById("madLibForm").style.display = "none";
+
+      animal.innerHTML = madanimal.value;
+      console.log("changed");
+      country.innerHTML = madcountry.value;
+      console.log("changed");
+      pluralNoun.innerHTML = madpluralNoun.value;
+      console.log("changed");
+      food.innerHTML = madfood.value;
+      console.log("changed");
+      device.innerHTML = maddevice.value;
+      console.log("changed");
+      noun.innerHTML = madnoun.value;
+      console.log("changed");
+      adjective.innerHTML = madadjective.value;
+      console.log("changed");
+      adjective2.innerHTML = madadjective2.value;
+      console.log("changed");
+    });
 
   </script>
 </body>

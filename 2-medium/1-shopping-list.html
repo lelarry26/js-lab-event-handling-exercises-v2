@@ -21,11 +21,30 @@
     <br>
     <input type="text" name="item" id="item">
     <button type="submit" id="addButton">Add</button>
+    <button type="submit" id="removeButton">Remove</button>
   </form>
 
   <script>
-    // JavaScript goes here
+  // const form = document.querySelector("form");
+  // form.addEventListener("submit", event => {
+  //The above is good for the whole form, but for two separate buttons with different functions, I used onclick.
+    addButton.onclick = function (){
+    event.preventDefault();
+    console.log("Prevent Refresh");
+    const shoppingList = document.getElementById("shoppingList");
+    const addItem = document.createElement("li");
+    document.getElementById("shoppingList").appendChild(addItem);
+    addItem.innerHTML = item.value;
+  };
+    removeButton.onclick = function (){
+    event.preventDefault();
+    console.log("Prevent Refresh");
+    const shoppingList = document.getElementById("shoppingList");
+    shoppingList.removeChild(shoppingList.lastElementChild);
     
+  };
+
+
   </script>
 </body>
 </html>
